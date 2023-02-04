@@ -1,5 +1,5 @@
-﻿using BulkyBookWeb.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Models;
 using System.Diagnostics;
 
 namespace BulkyBookWeb.Controllers

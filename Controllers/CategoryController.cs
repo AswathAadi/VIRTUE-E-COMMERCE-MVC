@@ -1,7 +1,7 @@
-﻿using BulkyBookWeb.Data;
-using BulkyBookWeb.Models;
+﻿using DataAccess;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Models;
 using System.Drawing;
 
 namespace BulkyBookWeb.Controllers
