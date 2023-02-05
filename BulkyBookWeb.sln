@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBookWeb", "BulkyBookWeb.csproj", "{47B5123D-BF49-4F82-B08A-33C57FC8D85E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{7B042293-CBFC-4D1A-AFC6-A98CA0238F52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{7B042293-CBFC-4D1A-AFC6-A98CA0238F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "..\Utility\Utility.csproj", "{C580CADA-19D6-4342-AF54-95F6E8DF5CDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "..\Utility\Utility.csproj", "{C580CADA-19D6-4342-AF54-95F6E8DF5CDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{68C7B752-4C12-401E-AD3B-5A30EDA878FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "..\Models\Models.csproj", "{68C7B752-4C12-401E-AD3B-5A30EDA878FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
