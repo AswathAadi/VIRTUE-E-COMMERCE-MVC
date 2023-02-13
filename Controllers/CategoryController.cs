@@ -17,7 +17,7 @@ namespace BulkyBookWeb.Controllers
         }
 
         [HttpGet]
-        [Route("categories")]
+        [Route("category")]
         public IActionResult Index()
         {
             IEnumerable<Category> Category = unitOfWork.Category.GetAll();
