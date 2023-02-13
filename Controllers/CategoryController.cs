@@ -20,7 +20,7 @@ namespace BulkyBookWeb.Controllers
         [Route("categories")]
         public IActionResult Index()
         {
-            IEnumerable<Category> Category = unitOfWork.category.GetAll();
+            IEnumerable<Category> Category = unitOfWork.Category.GetAll();
             return View(Category);
         }
 
@@ -40,7 +40,7 @@ namespace BulkyBookWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                unitOfWork.category.Add(obj);
+                unitOfWork.Category.Add(obj);
                 unitOfWork.save();
                 TempData["Success"] = "Category created successfully.";
                 return RedirectToAction("Index");
@@ -59,7 +59,7 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
 
-            var categoryFromDb = unitOfWork.category.GetFirstOrDefault(i => i.Id == id);
+            var categoryFromDb = unitOfWork.Category.GetFirstOrDefault(i => i.Id == id);
 
             if (categoryFromDb == null)
             {
@@ -77,7 +77,7 @@ namespace BulkyBookWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                unitOfWork.category.Update(obj);
+                unitOfWork.Category.Update(obj);
                 unitOfWork.save();
                 TempData["Success"] = "Category edited successfully.";
                 return RedirectToAction("Index");
@@ -96,9 +96,9 @@ namespace BulkyBookWeb.Controllers
                 return NotFound();
             }
 
-            var categoryFromDb = unitOfWork.category.GetFirstOrDefault(u => u.Id == id);
+            var categoryFromDb = unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
 
-            unitOfWork.category.Remove(categoryFromDb);
+            unitOfWork.Category.Remove(categoryFromDb);
             if (categoryFromDb == null)
             {
                 return NotFound();
@@ -114,13 +114,13 @@ namespace BulkyBookWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                var categoryObject = unitOfWork.category.GetFirstOrDefault(i => i.Id == id);
+                var categoryObject = unitOfWork.Category.GetFirstOrDefault(i => i.Id == id);
                 if (categoryObject == null)
                 {
                     return NotFound();
                 }
 
-                unitOfWork.category.Remove(categoryObject);
+                unitOfWork.Category.Remove(categoryObject);
                 unitOfWork.save();
                 TempData["Success"] = "Category deleted successfully.";
                 return RedirectToAction("Index");
