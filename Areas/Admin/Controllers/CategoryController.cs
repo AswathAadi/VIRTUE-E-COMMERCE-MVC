@@ -5,11 +5,12 @@ using BulkyBookWeb.Models;
 using System.Drawing;
 using BulkyBookWeb.DataAccess.Repository.IRepository;
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private IUnitOfWork unitOfWork {get; set;}
+        private IUnitOfWork unitOfWork { get; set; }
 
         public CategoryController(IUnitOfWork unitOfWork)
         {
